@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=960px">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts🧙🏻‍♂️</title>
+    <style>
+    @import url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/455/original/Wizarding_World_of_Harry_Potter_Castle.jpg?1635972383');
+  body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,rgba(0, 0, 0, 0.8), rgb(105, 113, 121)
+    ), url(https://cdn.wallpapersafari.com/18/31/KoBWei.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+        h1 {
+            margin: 10px auto;
+            text-align: center;
+            color: #ddb595;
+        }
+        h2 {
+        text-align: center;
+        border: 1px solid #B3A294;;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+        body {
+     text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+     line-height: 1.4;
+     color:white;
+      margin: 0;
+      text-shadow: 2px 2px 4px black;
+     }
+
+     img{
+         display: block;
+         margin: 0 auto;
+         max-width: 100%;
+         border-radius: 30px;
+     }
+
+     p {
+        text-align: center;
+        line-height: 2;
+        font-size: 18px;
+        margin: 20px 0 10px;
+        padding: 20px;
+        text-shadow: 4px 4px 6px black;
+      }
+      button{
+          text-align: left;
+        display: block;
+        margin: 20px auto;
+        background: #0E2233;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #334351;
+        cursor: pointer;
+      }
+      
+      .magic {
+        text-align: center;
+        color: #eba770;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+
+      .magic:hover {
+          text-decoration: underline;
+      }
+
+      .container {
+         box-sizing: border-box;
+         margin: 0 auto;
+         display: block;
+         max-width: 70%;
+         max-height: 80%;
+         border-radius: 1%;
+         background-size:cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+         opacity:80%;
+         padding: 30px 60px;
+      }
+
+      .footer{
+          text-align: center;
+          color: rgb(43, 43, 43);
+          text-shadow: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Hogwarts School of Witchcraft and Wizardry</h1>
+    <h2>A Boarding Magic School</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/453/original/hogwarts.jpg?1635972128" alt="Hogwarts Castle">
+    <p>
+    Whether you get there in a flying car,
+     or by taking the Hogwarts Express train from Platform 9¾,
+     Hogwarts School of Witchcraft and Wizardry is a castle school
+     Founded over a thousand years ago - the precise date is uncertain -
+     by the four greatest witches and wizards of the age 
+     Hogwarts is an institution wherein students are divided into four school houses named after its founders:
+     Godric GRYFFINDOR, Helga HUFFLEPUFF, Rowena RAVENCLAW, and Salazar SLYTHERIN.  
+</p>
+
+<a href="https://www.wizardingworld.com/"
+target="_blank" class="magic">
+Explore Wizarding World
+</a> 
+
+<button class="Enroll-button">
+Join Hogwarts 🔮
+</button>
+</div>
+<p class="footer">This page was coded by Sara Daneshvar</p>
+<script>
+ function Welcome() {
+      let name = prompt("What is your name young wizard?");
+      let owl = prompt("What is your Owl name?");
+      let hogwartsHouse = prompt("What is your Hogwarts house?");
+
+
+      alert(
+        "Thank you, " +
+          name +
+          "! We'll be in touch by our owls, Meanwhile enjoy the feast My " + hogwartsHouse + " fellow!"
+      );
+    }
+
+
+ let EnrollButton = document.querySelector(".Enroll-button");
+ EnrollButton.addEventListener("click", Welcome);
+
+  </script>
+
+</body>
+</html>
